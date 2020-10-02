@@ -13,13 +13,13 @@ void swap(ll* a, ll* b)
 
 ll partition( ll *arr, ll s, ll e)
 {
-    ll pivot = arr[e];
+    ll pivot1 = arr[e];
 
     ll i = s - 1;
 
     for(ll j = s; j<=e-1; j++)
     {
-        if(arr[j] <= pivot)
+        if(arr[j] <= pivot1)
         {
             i++;
             swap(&arr[i], &arr[j]);
